@@ -1,0 +1,63 @@
+body{
+    font-family:STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+.header{
+    min-width:1100px;
+    background: url("../images/header_bg.jpg") no-repeat center;
+    height: 120px;
+}
+.header-lt{
+    float: left;
+}
+.header-rt{
+    float: right;
+}
+.header-rt ul>li{
+    float: left;
+    font:16px/120px "";
+    margin-left: 30px;
+    position: relative;
+}
+.header-rt ul>li a{
+    color: white;
+}
+.header-rt ul>li img{
+    margin-left: 5px;
+}
+.header-rt ul li .dian{
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    top: 25px;
+    display: none;
+}
+.header-rt ul li ol{
+    position: absolute;
+    width: 180px;
+    top: 90px;
+    left: -30px;
+    background: #36264A;
+    z-index: 3;
+    display: none;
+}
+.header-rt ul li ol li{
+    width: 180px;
+    font:14px/40px "";
+    box-sizing: border-box;
+    position: relative;
+}
+.header-rt ul li ol li a{
+    width: 130px;
+    margin-left: 30px;
+    color: white;
+}
+.header-rt ul li ol li img{
+    position: absolute;
+    right: 15px;
+    top:50%;
+    margin-top: -4px;
+    display: none;
+}
+.header-rt ul li:hover .dian{
+    display: block !important;
+}

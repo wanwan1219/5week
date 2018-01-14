@@ -1,0 +1,103 @@
+.content_wrap{
+    width: 780px;
+    margin: 0 auto;
+    min-height: 700px;
+    background: #fff;
+    padding: 70px 160px 220px 160px;
+}
+.content_wrap .title_big,.content_wrap h2{
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+}
+.content_wrap .title_big{
+    line-height: 60px;
+}
+.content_wrap h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+.content_wrap img{
+    margin: 15px auto 0;
+    display: block;
+}
+.content_wrap .title_list{
+    color: #311759;
+    font-size: 30px;
+    background: url(../images/pen_line_long.png) no-repeat -320px 58px;
+    height: 60px;
+    position: relative;
+    margin-top: 70px;
+}
+.content_wrap .title_list .pen{
+    width: 61px;
+    height: 58px;
+    background: url(../images/pen_article.png) no-repeat;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    cursor: pointer;
+}
+.content_wrap .title_list .pen:hover{
+    background-position:-61px 0;
+}
+.content_wrap .author{
+    color: #6b6a6f;
+    padding-top: 15px;
+    margin-bottom: 60px;
+}
+.content_wrap .author>span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content_wrap .article_content .content p{
+    line-height: 22px;
+    margin-bottom: 23px;
+}
+.content_wrap .article_content .content .title{
+    font-size: 22px;
+}
+.content_wrap .article_content .like_wrap{
+    margin-top: 80px;
+    margin-left: 350px;
+    width: 73px;
+    height: 73px;
+    overflow: hidden;
+}
+.content_wrap .article_content .like_wrap .like_show{
+    width: 220px;
+}
+.content_wrap .article_content .like_wrap .like_show .like_btn{
+    width: 73px;
+    height: 73px;
+    float: left;
+    background: url(../images/article_iflike.png) no-repeat;
+    cursor: pointer;
+}
+.content_wrap .article_content .like_wrap .like_show .like_num{
+    width: 135px;
+    height: 35px;
+    float: left;
+    margin-left: 5px;
+    background: url(../images/article_iflike_nomberbg.png) no-repeat;
+    margin-top: 19px;
+    padding-top: 8px;
+    color: #fff;
+    text-align: center;
+    padding-left: 5px;
+}
+.content_wrap .article_content .like_wrap:hover{
+    width:220px;
+    transition: all 0.5s ease 0s;
+}
+.content_wrap .article_content .like_wrap .like_show .like_btn:hover{
+    animation:1s linear 0s normal none 1 running su-pudding;
+}
+.link_footer_img{
+    background: #fff url(../images/map_bottomimg.png) top center no-repeat;
+    height: 33px;
+    width: 100%;
+    min-width: 1100px;
+}

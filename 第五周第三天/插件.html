@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="0401资源/0401资源/Animate.css_files/animate.min.css">
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: green;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+<!--animate：不依赖任何东西，只要引进去，添加上相应的类名就可以了。但是他不兼容ie低版本-->
+<!--c3 animation 封装的动画。-->
+<!--他不需要有动画过程。-->
+    <div class="box animated fadeInDownBig"></div><!--两个名字 -->
+    <div class="box2"></div>
+</body>
+<script src="move.js/move.js/js/jquery-1.8.3.min.js"></script>
+<script src="move.js/move.js/js/move.js"></script>
+<script>
+//    move:必须要和jq里的动画一起用的；
+//    写的动画方式。可以兼容ie低版本。
+//    必须是已经有了整个动画过程。
+    $(".box2").animate({left:600},2000,"elasticIn",function(){
+        alert(1);
+    })
+</script>
+</html>

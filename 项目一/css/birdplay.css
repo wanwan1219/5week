@@ -1,0 +1,121 @@
+body{
+    background: #f1f2f6;
+}
+.main{
+    min-height: 500px;
+    padding-top: 120px;
+    overflow: hidden;
+}
+.main .inner h1,.main .inner h2{
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+}
+.main .inner h1{
+    line-height: 60px;
+}
+.main .inner h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+.main .inner>img{
+    margin:15px auto 0;
+    display: block;
+}
+.main .inner .list{
+    color: #311759;
+    font-size: 30px;
+    background: url(../images/pen_line_long.png) no-repeat 0 58px;
+    height: 60px;
+    position: relative;
+}
+.main .inner .list span{
+    width: 61px;
+    height: 58px;
+    background: url(../images/pen_list.png) no-repeat;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    cursor: pointer;
+}
+.main .inner .list-con .con1{
+    width: 513px;
+    height: 202px;
+    float: left;
+    background: #fff;
+    padding: 36px 0 0 20px;
+    margin: 0 20px 30px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+}
+.main .inner .list-con{
+    padding-top: 40px;
+    overflow: hidden;
+    width: 1130px;
+}
+.main .inner .list-con .con1 .img-wrap{
+    height: 168px;
+    width: 260px;
+    overflow: hidden;
+    float: left;
+    margin-right: 17px;
+}
+.main .inner .list-con .con1 .img-wrap img{
+    width: 260px;
+}
+.main .inner .list-con .con1 .con-text{
+    width: 221px;
+    float: left;
+}
+.main .inner .list-con .con1 .con-text .title{
+    font-size: 20px;
+    color: #454548;
+    line-height: 26px;
+    max-height: 53px;
+    overflow: hidden;
+    padding-top: 15px;
+}
+.main .inner .list-con .con1 .con-text .sub-title{
+    color: #6b6a6f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-top: 2px;
+}
+.main .inner .list-con .con1 .con-text p{
+    padding-top: 8px;
+    color: #47464a;
+    line-height: 25px;
+    max-height: 75px;
+    overflow: hidden;
+    font-family: KaiTi_GB2312;
+    letter-spacing: 0;
+}
+.main .inner .list-con .con1 .img-over{
+    position: absolute;
+    left: 0;
+    top: 36px;
+}
+.main .inner .list-con .con1:hover{
+    border-color: #86759e;
+    transform: translateY(-6px);
+    transition: all 0.3s ease 0s;
+}
+.main .inner .list-con .con1:hover .img-over{
+    transition: all 0.3s ease 0s;
+    top: 36px;
+    left: 50px;
+}
+.main .inner .list-more{
+    height: 58px;
+    width: 58px;
+    background: url(../images/lis_more_btn_bg.png) no-repeat 0 -58px;
+    margin: 15px auto;
+    cursor: pointer;
+}
+.main .inner .list-more:hover{
+    background-position: 0 0;
+    transition: all 0.3s ease 0s;
+}

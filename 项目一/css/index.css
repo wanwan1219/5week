@@ -1,0 +1,767 @@
+/*banner开始*/
+body{
+    background: #f1f2f6;
+}
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner ul{
+    width: 100%;
+    height: 593px;
+    position: relative;
+}
+.banner ul li{
+    width: 100%;
+    height: 593px;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+}
+.banner ul li .inner{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.banner ul li img{
+    position: absolute;
+}
+.banner ul li img:nth-of-type(1){
+    left: 345px;
+    top: 204px;
+}
+.banner ul li img:nth-of-type(2){
+    left: 376px;
+    top: 300px;
+}
+.banner ul li img:nth-of-type(3){
+    left: 370px;
+    top:355px;
+}
+.banner ul li:nth-of-type(2) img:nth-of-type(1){
+    left: 45px ;
+    top: 185px;
+}
+.banner ul li:nth-of-type(2) img:nth-of-type(2){
+    left: 268px;
+    top: 72px;
+}
+.banner ul li:nth-of-type(2) img:nth-of-type(3){
+    left: 266px;
+    top: 197px;
+}
+.banner .click{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -108px;
+}
+.banner .click .prev{
+    float: left;
+    cursor: pointer;
+}
+.banner .click .center{
+    float: left;
+    margin-top: 3px;
+}
+.banner .click .next{
+    float: left;
+    cursor: pointer;
+}
+.banner .click .center>img{
+    vertical-align: middle;
+    width: 52px;
+}
+.banner .click .center-center{
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 45px;
+    height: 15px;
+    border-radius: 15px;
+    background: url("../images/next&prev_mbg01.png") no-repeat left,
+    url("../images/next&prev_mbg03.png") no-repeat right,
+    url("../images/next&prev_mbg02.png") repeat-x center;
+}
+.banner .click .center-center img{
+    margin-top: -9px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.banner .click .prev:hover{
+    animation:1s linear 0s normal none 1 running su-pudding;
+}
+.banner .click .next:hover{
+    animation:1s linear 0s normal none 1 running su-pudding;
+}
+/*main1开始*/
+.main1 .main1-top{
+   text-align: center;
+    margin-top:48px;
+}
+.main1 .main1-center h1{
+    text-align: center;
+    margin-top: 60px;
+    font:54px/60px "";
+    color: #311759;
+}
+.main1 .main1-center h2{
+    text-align: center;
+    font:18px/22px "";
+    color:#311759;
+    letter-spacing: 6px;
+}
+.main1 .main1-center img{
+    display: block;
+    margin: 20px auto 70px;
+}
+/*.main1-bot{*/
+    /*position: relative;*/
+/*}*/
+.main1-bot .main1-bot-lt{
+    /*position: absolute;*/
+    width: 19px;
+    height: 380px;
+    margin-right: 51px;
+    margin-top: 22px;
+    float: left;
+    background: url("../images/chanpin_nowline_bgline.png") repeat-y 9px 20px;
+}
+.main1-bot .main1-bot-lt .line{
+    height: 11px;
+    width: 19px;
+    margin-bottom: 63px;
+    position: relative;
+    text-align: center;
+}
+.main1-bot .main1-bot-lt .line i{
+    background: url("../images/chanpin_nowline_daquan.png") no-repeat;
+    width: 19px;
+    height: 19px;
+    display: none;
+}
+.main1-bot .main1-bot-lt .line span{
+    background: url("../images/chanpin_nowline_xiaoquan.png") repeat-y top center;
+    width: 11px;
+    height: 11px;
+    display: block;
+    margin: auto;
+}
+.main1-bot .main1-bot-lt .now i{
+    display: block;
+}
+.main1-bot .main1-bot-lt .now span{
+    display: none;
+}
+.main1-bot .main1-bot-lt span:hover{
+    animation: gg .5s linear 0s forwards;
+}
+@keyframes gg {
+    0%{}
+    100%{background-position:0 11px;}
+}
+.main1 .main1-bot-rt .content .content-rt h1{
+    color: #311759;
+    font-size: 30px;
+    background: url(../images/pen_line.png) no-repeat left bottom;
+    height: 60px;
+    position: relative;
+}
+.main1 .main1-bot-rt .content>img{
+    float: left;
+}
+.main1 .main1-bot-rt{
+    float: left;
+    width: 1020px;
+    position: relative;
+    height: 436px;
+    overflow: hidden;
+}
+.main1 .main1-bot-rt .content .content-rt{
+    float: right;
+    width: 613px;
+}
+.main1 .main1-bot-rt .content .content-rt h1 span{
+    width: 61px;
+    height: 54px;
+    background: url(../images/pen.png) no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+}
+.main1 .main1-bot-rt .content-main{
+    margin: 35px 0 90px 10px;
+}
+.main1 .main1-bot-rt .content-main img{
+    margin-right: 10px;
+    float: left;
+}
+.main1 .main1-bot-rt .content-main h2{
+    font-size: 24px;
+    width: 470px;
+    float: left;
+}
+.main1 .main1-bot-rt .content-main p{
+    width: 483px;
+    line-height: 24px;
+    float: left;
+}
+.main1 .main1-bot-rt .content-main1 p{
+    font-size: 15px;
+    line-height: 24px;
+    color:  #565559;
+}
+.main1 .main1-bot-rt .content-main2{
+    margin-top: 30px;
+}
+.main1 .main1-bot-rt .content-main2 img:first-of-type{
+    float: right;
+    margin-top: 28px;
+}
+.main1 .main1-bot-rt .content-main2 p{
+    float: right;
+    margin-top: 14px;
+    font-size: 18px;
+}
+.main1 .main1-bot-rt .content-main2 img:last-of-type{
+    float: right;
+}
+.main1 .main1-bot-rt .content-main3{
+    position: absolute;
+    top: 232px;
+    left: 50%;
+    margin-left: -101px;
+    z-index: 999;
+    height: 29px;
+    width: 610px;
+    background: url(../images/next&prev_line.png) repeat-x left center;
+}
+.main1 .main1-bot-rt .content-main3 .prev{
+    background: url("../images/prev_jiantou.png") no-repeat left;
+    width: 29px;
+    height: 29px;
+}
+.main1 .main1-bot-rt .content-main3 .next{
+    background: url("../images/next_jiantou.png") no-repeat right;
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.main1 .main1-bot-rt .content-main3 .prev:hover{
+    background-image: url("../images/prev_jiantou_hover.png");
+    animation:1s linear 0s normal none 1 running su-pudding;
+}
+.main1 .main1-bot-rt .content-main3 .next:hover{
+    background-image: url("../images/next_jiantou_hover.png");
+    animation:1s linear 0s normal none 1 running su-pudding;
+}
+.main1-bot .main1-bot-rt .content:nth-of-type(3) .content-rt .content-main p{
+    width:600px;
+}
+.main1-bot .main1-bot-rt .content:nth-of-type(4) .content-rt .content-main p{
+    width:100%;
+}
+.main1-bot .main1-bot-rt .content:nth-of-type(6) .content-rt .content-main p{
+    width:100%;
+}
+/*main2开始*/
+.main2{
+    background: url("../images/mokuai02_bg.jpg") no-repeat center;
+    height: 923px;
+    width: 100%;
+}
+/*main3开始*/
+.inner .main3-top img{
+    display: block;
+    margin: 10px auto 0;
+}
+.inner .main3-cet h1{
+    margin-top: 10px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+}
+.inner .main3-cet h2{
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-align: center;
+    color: #311759;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inner .main3-cet img{
+    margin: 20px auto 70px;
+    display: block;
+}
+.main3 .main3-bot ul>li{
+    border-bottom: 2px dashed #e0e0e2;
+    margin-bottom: 54px;
+}
+.main3 .main3-bot ul li .number{
+    width: 148px;
+    font-size: 90px;
+    color: #b5b6ba;
+    font-family: "宋体";
+    float: left;
+}
+.main3 .main3-bot ul li .title{
+    width: 285px;
+    text-align: right;
+    padding-top: 31px;
+    float: left;
+}
+.main3 .main3-bot ul li .title h1{
+    color: #311859;
+    font-size: 24px;
+}
+.main3 .main3-bot ul li .centering{
+    width: 116px;
+    margin: 0 44px 0 59px;
+    cursor: pointer;
+    float: left;
+}
+.main3 .main3-bot ul li .sub-title{
+    width: 320px;
+    margin: 20px 60px 0 0;
+    font-family: KaiTi_GB2312;
+    line-height: 24px;
+    float: left;
+}
+.main3 .main3-bot ul li .icon{
+    height: 67px;
+    width: 67px;
+    background: url(../images/business_zhankaishouqi.png);
+    cursor: pointer;
+    margin-top: 22px;
+    transition: all 0.5s ease 0s;
+    float: left;
+}
+.main3 .main3-bot ul li .icon1{
+    background: url(../images/business_zhankaishouqi.png) 0 67px;
+    transition: all 0.5s ease 0s;
+}
+.main3 .main3-bot ul li ol{
+    padding-bottom: 30px;
+    width: 790px;
+    margin-left: 180px;
+    display: none;
+}
+.main3 .main3-bot ul li ol li{
+    text-indent: 2em;
+    margin-bottom: 20px;
+    color: #565559;
+    font: 15px/24px "KaiTi_GB2312";
+}
+.main3 .main3-bot ul li .box{
+    height: 116px;
+    margin-bottom: 66px;
+}
+.main3 .main3-bot ul li ol .li1{
+    text-indent: 0;
+}
+/*main4开始*/
+.main4 .main4-bot{
+    width: 1100px;
+    height: 430px;
+    position: relative;
+    padding-top: 78px;
+    overflow: hidden;
+}
+.main4 .main4-bot ul{
+    width: 5000px;
+    position: relative;
+    left: 0;
+}
+.main4 .main4-bot ul>li{
+    float: left;
+    width: 1100px;
+    height: 268px;
+}
+.main4 ul li .content1 .content-lt,.main4 ul li .content1 .content-ct{
+    float: left;
+    position: relative;
+}
+.main4 ul li .content1{
+    box-sizing: border-box;
+    border:1px solid #e0e1e5;
+    width: 535px;
+    height: 190px;
+    float: left;
+}
+.main4 ul li .content2{
+    float: left;
+    margin-left: 25px;
+}
+.main4 ul li .content1 .content-lt img{
+    position: absolute;
+    top: -78px;
+    left: 50%;
+    margin-left: -78px;
+}
+.main4 ul li .content1 .content-lt{
+    width: 220px;
+    height: 190px;
+}
+.main4 ul li .content1 .content-lt a{
+    background: url("../images/team_amore.png") no-repeat;
+    width: 156px;
+    height: 156px;
+    position: absolute;
+    top: -78px;
+    left: 50%;
+    margin-left: -78px;
+    z-index: 10;
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.main4 ul li .content1 .content-lt .box:hover a{
+    opacity: 1;
+}
+.main4 ul li .content1 .content-lt p{
+    position: absolute;
+    top:50%;
+    left: 39px;
+    width: 220px;
+    text-align: center;
+    font-size: 24px;
+    color: #5f4c82;
+    margin-left: -30px;
+}
+.main4 ul li .content1 .content-lt span{
+    position: absolute;
+    top:67%;
+    left: 39px;
+    display: block;
+    width: 220px;
+    text-align: center;
+    font-size: 18px;
+    color: #5f4c82;
+    margin-left: -30px;
+}
+.main4 ul li .content1 .content-ct p{
+    width: 245px;
+    height: 80px;
+    margin-top: 24px;
+}
+.main4 ul li .content1 .content-ct .email{
+    border: 1px solid transparent;
+}
+.main4 ul li .content1 .content-ct .email:hover{
+    border: 1px solid #5f4c82;
+    transition:all .5s ease 0s;
+}
+.main4 ul li .content1 .content-ct div i{
+    display: block;
+    float: left;
+    background:#d9d9e1 url("../images/team_contact.png") 12px 17px no-repeat;
+    width: 45px;
+    height: 45px;
+}
+.main4 ul li .content1 .content-ct div span{
+    display: block;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    background:#e7e8ec;
+    color: #5f4c82;
+    float: left;
+    text-align: center;
+}
+.main4 ul li .content1 .content-rt{
+    float: right;
+    background: #2999d6;
+}
+.main4 ul li .content1 .content-rt div{
+    background: url("../images/team_contact.png") no-repeat;
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+}
+.main4 ul li .content1 .content-rt div:hover{
+    background-color:#168bcb;
+}
+.main4 ul li .content1 .content-rt .wb{
+    background-position: 14px -28px;
+}
+.main4 ul li .content1 .content-rt .qq{
+    background-position: 14px -75px;
+}
+.main4 ul li .content1 .content-rt .tb{
+    background-position: 14px -126px;
+}
+.main4 ul li .content1 .content-rt .wx{
+    background-position: 14px -166px;
+}
+.main4 .main4-bot .click{
+    position: absolute;
+    bottom: 70px;
+    z-index: 20;
+    height: 29px;
+    width: 216px;
+    left: 50%;
+    margin-left: -108px;
+    background: url(../images/next&prev_line.png) no-repeat left center;
+}
+.main4 .main4-bot .click .prev,.main4 .main4-bot .click .next{
+    position: absolute;
+    top: 0;
+    height: 29px;
+    width: 29px;
+    background: url(../images/prev_jiantou.png) no-repeat;
+    cursor: pointer;
+}
+.main4 .main4-bot .click .prev:hover{
+    background-image: url("../images/prev_jiantou_hover.png");
+    animation:1s linear 0s normal none 1 running su-pudding;
+}
+.main4 .main4-bot .click .next:hover{
+    background-image: url("../images/next_jiantou_hover.png");
+    animation:1s linear 0s normal none 1 running su-pudding;
+}
+.main4 .main4-bot .click .next{
+    right: 0;
+    background: url(../images/next_jiantou.png) no-repeat;
+}
+.main4 .main4-bot .click .center-warp{
+    margin: 0 auto;
+    width: 45px;
+    height: 14px;
+    background: url(../images/next&prev_mbg01.png) no-repeat;
+    margin-top: 7px;
+}
+.main4 .main4-bot .click .center{
+    background: url(../images/next&prev_mbg03.png) no-repeat right;
+    height: 14px;
+}
+.main4 .main4-bot .click .center-center{
+    background: url(../images/next&prev_mbg02.png) repeat-x;
+    height: 14px;
+    width: 33px;
+    margin: 0 6px;
+}
+.main4 .main4-bot .click span{
+    display: block;
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin-right: 7px;
+    margin-top: 4px;
+    background: url(../images/next&prev_others.png);
+}
+.main4 .main4-bot .click span:last-of-type{
+    margin-right: 0;
+}
+.main4 .main4-bot .click span.blue{
+    background-image: url("../images/next&prev_now.png");
+}
+/*main5开始*/
+.main5{
+   background: #ffffff;
+}
+.main5 .main5-bot{
+    position: relative;
+}
+.main5 .main5-bot .partners{
+    width: 550px;
+    border-right: 1px solid #d9d9e1;
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 120px;
+}
+.main5 .main5-bot h1{
+    font-size: 36px;
+    line-height: 50px;
+}
+.main5 .main5-bot h2{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-left: 6px;
+    letter-spacing: 6px;
+}
+.main5 .main5-bot ul{
+    width: 550px;
+}
+.main5 .main5-bot ul li{
+    width: 173px;
+    height: 80px;
+    float: left;
+    margin-top: 70px;
+}
+.main5 .main5-bot .user{
+    float: left;
+    width: 470px;
+    margin-left: 70px;
+    margin-bottom: 120px;
+}
+.main5 .main5-bot .more{
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    background: url("../images/yonghu_morebg.png") no-repeat right center;
+    width: 69px;
+    height: 26px;
+}
+.main5 .main5-bot .more:hover{
+    background-position: left center;
+    transition:all 1s ease 0s;
+}
+/*main6开始*/
+.main6 .main6-bot i{
+    background:#e7e8ec  url("../images/lianxi_icons.png") no-repeat;
+    width: 45px;
+    height: 45px;
+    display: block;
+    float: left;
+}
+.main6 .main6-bot .text,.main6 .main6-bot .e-mail,.main6 .main6-bot .phone,.main6 .main6-bot .name{
+    height: 45px;
+    width: 333px;
+    background: #fff;
+    border: 1px solid #dedfe3;
+    margin-bottom: 27px;
+    float: left;
+}
+.main6 .main6-bot .text:hover,.main6 .main6-bot .e-mail:hover,.main6 .main6-bot .phone:hover,.main6 .main6-bot .name:hover{
+    border: 1px solid #7f7d83;
+}
+.main6 .main6-bot .input1{
+    border:1px solid #7f7d83;
+}
+.main6 .main6-bot .icon1{
+    background-position: 13px 14px;
+}
+.main6 .main6-bot .icon2{
+    background-position: -31px 14px;
+}
+.main6 .main6-bot .icon3{
+    background-position: -79px 14px;
+}
+.main6 .main6-bot .icon4{
+    height: 210px;
+    background-position: -128px 14px;
+}
+.main6 .main6-bot>div input{
+    float: left;
+    line-height: 45px;
+    height: 45px;
+    color: #5f4c82;
+    font-size: 16px;
+    width: 268px;
+    border: none 0;
+    padding-left: 18px;
+    outline: none;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica;
+}
+.main6 .main6-bot>div textarea{
+    float: left;
+    line-height: 27px;
+    color: #5f4c82;
+    font-size: 16px;
+    width: 640px;
+    padding-right: 17px;
+    height: 200px;
+    border: none 0;
+    text-align: left;
+    padding-left: 18px;
+    padding-top: 10px;
+    outline: none;
+    resize: none;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica;
+}
+.main6 .main6-bot .font{
+    color: #7f7d83;
+    height: 86px;
+    width: 339px;
+    float: left;
+    /*box-sizing: border-box;*/
+}
+.main6 .main6-bot .font2{
+    color: #605f64;
+    font-size: 18px;
+    height: 72px;
+    width: 339px;
+    float: left;
+}
+.main6 .main6-bot .input-box{
+    background: #168bcb;
+    border:1px solid #2999d6;
+    cursor: pointer;
+    width: 331px;
+    float: left;
+    margin-bottom: 27px;
+}
+.main6 .main6-bot .input-box span{
+    float: left;
+    line-height: 45px;
+    font-size: 16px;
+    width: 200px;
+    padding-left: 18px;
+    text-align: center;
+    color: #fff;
+}
+.main6 .main6-bot .input-box:hover{
+    background: #0d74ac;
+    border: 1px solid #0d74ac;
+    transition: all 0.5s ease 0s;
+}
+.main6 .main6-bot .input-box .icon5{
+    float: left;
+    width: 45px;
+    height: 45px;
+    background:#2999d6 url("../images/lianxi_icons.png") no-repeat -179px 14px;
+}
+.main6 .main6-btm{
+    margin-top: 50px;
+    overflow: hidden;
+}
+.main6 .main6-btm .tel{
+    width: 345px;
+    height: 250px;
+    float: left
+}
+.main6 .main6-btm .tel img{
+    position: relative;
+    top: 24px;
+    float: left;
+}
+.main6 .main6-btm .tel .btm-rt{
+    width: 210px;
+    height: 170px;
+    margin-left: 27px;
+    float: left;
+}
+.main6 .main6-btm .tel .btm-rt h1{
+    line-height: 60px;
+    height: 60px;
+    width: 210px;
+    background: url(../images/lianxi_kuaier_bg.png) no-repeat bottom left;
+    color: #5f4c82;
+    margin-bottom: 14px;
+}
+.main6 .main6-btm .tel .btm-rt p{
+    line-height: 32px;
+    color: #524d5c;
+    font-size: 15px;
+}
+.map-warp{
+    position: relative;
+}
+.map-warp>img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 32px;
+}
+.map-warp>img:first-of-type{
+    top:0;
+    z-index: 999;
+}
+.map-warp>img:last-of-type{
+    bottom:0;
+    z-index: 999;
+}

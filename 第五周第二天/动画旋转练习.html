@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .box1{
+            width: 560px;
+            height: 300px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .box1 ul {
+            position: relative;
+            height: 300px;
+            width: 112px;
+            float: left;
+            transform-style: preserve-3d;
+            transform:rotateX(30deg);
+            transition: all 1s ease 0s;
+        }
+        .box1 ul li{
+            width: 112px;
+            height: 300px;
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+
+        /*每一个ul 下面的第一个li都用的第一张图片*/
+        /*每一个ul 下面的第二个li都用的第二张图片*/
+        /*每一个ul 下面的第三个li都用的第三张图片*/
+        /*每一个ul 下面的第四个li都用的第四张图片*/
+        .box1 ul li:first-of-type{
+            background: url("images/1.jpg") no-repeat;
+            transform: translateZ(150px);  /*所有的ul下面的第一个li都是向Z轴移动这个距离*/
+        }
+        .box1 ul li:nth-of-type(2){
+            background: url("images/2.jpg") no-repeat;
+            transform: translateZ(-150px) rotateX(180deg); /*先移动在旋转*/
+        }
+        .box1 ul li:nth-of-type(3){
+            background: url("images/3.jpg") no-repeat;
+            transform: translateY(-150px) rotateX(90deg);
+        }
+        .box1 ul li:nth-of-type(4){
+            background: url("images/4.jpg") no-repeat;
+            transform: translateY(150px) rotateX(-90deg);
+        }
+        /*每一个ul 下面的li 在的的背景不一样*/
+        .box1 ul:first-of-type li{
+            background-position:0 !important;/*背景图片定位*/
+        }
+        .box1 ul:nth-of-type(2) li{
+            background-position: -112px !important;/*背景图片定位*/
+        }
+        .box1 ul:nth-of-type(3) li{
+            background-position: -224px !important;/*背景图片定位*/
+        }
+        .box1 ul:nth-of-type(4) li{
+            background-position: -336px !important;/*背景图片定位*/
+        }
+        .box1 ul:nth-of-type(5) li{
+            background-position: -448px !important;/*背景图片定位*/
+        }
+
+        .click div{
+            width: 30px;
+            height: 50px;
+            background:rgba(0,0,0,.7);
+            color: white;
+            font:30px/50px "";
+            position: absolute;
+            top:50%;
+            margin-top: -25px;
+        }
+        .click .prev{
+            left: 0;
+        }
+        .click .next{
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <!--ul是盒子，每个盒子里的li加不同的图片 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="click">
+        <div class="prev">&lt;</div>
+        <div class="next">&gt;</div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    var index=0;/*定义一个数*/
+$(".next").click(function(){
+    index++;
+    $("ul").each(function(i){ /*让所有ul都进行这个函数 依次输出所选中集合元素的索引 每输出一次 内部代码执行一次*/
+        $("ul").eq(i).css({transform:"rotateX("+index*-90+"deg)",transitionDelay:0.25*i+"s"})
+//        下一张比上一张延迟0.25s
+    })
+})
+</script>
+</html>

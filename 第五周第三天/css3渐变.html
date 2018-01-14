@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*渐变：*/
+        /*1.线性渐变 to top 从下到上 to right 从左到右 30deg 度数渐变*/
+        .box1{
+            width: 300px;
+            height: 300px;
+            margin:100px auto;
+            background-image: linear-gradient(to top,pink,yellow,green);/*从下到上*/
+        }
+        /*2.径向渐变 半径 圆心位置（0px 0px），颜色，颜色*/
+        .box2{
+            width: 300px;
+            height: 300px;
+            margin:100px auto;
+            background-image: radial-gradient(150px at center center,yellow,pink);
+        }
+        /*发廊滚筒*/
+        .box3{
+            width: 100px;
+            height: 400px;
+            margin: 10px auto;
+            background: 0 0, linear-gradient(135deg,#fff 0%,#fff 25%,#000 25%,#000 50%,#fff 50%,#fff 75%,#000 75%,#000 100%);
+            background-size: 100px 100px;
+            /*background-position: 0 0;*/
+            animation: gg 1s linear 0s infinite;
+        }
+        @keyframes gg {
+            0%{}
+            100%{background-position: 0 -300px}
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            background: rgba(255,0,255,.4);
+        }
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+<div class="box5"></div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        /*:nth-child(x)选中元素的第x个子元素，从1开始
+        ：last-child();
+        :first-child();
+        :nth-of-type();
+        */
+        /*属性选择器 和jq一样的*/
+        .box ul [b]{ /*ul 下面的子元素 class名叫b的*/
+            color: red;
+        }
+        /*.box ul [b^=aa]...与jq相同*/
+
+
+        /*:first-letter 选中第一个文字*/
+        .box2:first-letter{ /*.box2下面的文字的第一个字 或者第一个字母*/
+            font-size: 68px;
+            color: yellow;
+        }
+
+
+        /*:first-line 选中第一行文字*/
+        .box2:first-line{ /*.box2下面的文字的第一行字*/
+            font-size: 68px;
+            color: yellow;
+        }
+
+
+        /*::selection 设置选中时的背景和文字颜色*/
+        .box::selection{
+            color: green;
+            background: #ffcd96;
+        }
+
+
+        /*text-shadow 文本阴影 4个值 用空格分隔开
+        1.水平偏移量 x轴 3px
+        2.竖直偏移量 y轴 3px
+        3.模糊度 羽化值 2px 不能为负数 数值越大越淡 0基本实化
+        4.模糊的颜色
+        */
+        .box2{
+            text-shadow: 2px 2px 3px red;
+            /*text-shadow: 2px 2px 3px red,3px 3px 3px black; !*可以加无数个 但是注意要错开 xy值要不一样*!*/
+        }
+
+        /*box-shadow 盒子阴影 芯也有阴影的 有内阴影 在四个值前面加一个inset*/
+        .box3{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            box-shadow: 4px 4px 3px yellow,inset 5px 5px 3px red;
+        }
+
+        /*border-radius 8个取值 左上 右上 右下 左下
+        x/y  x四个值 y四个值 越尖数越大
+        */
+        .box4{
+            margin-top: 40px;
+            width: 200px;
+            height: 300px;
+            border-radius: 100px/200px 200px 100px 100px;
+            background: lightgoldenrodyellow;
+        }
+
+        /*background 可以添加多张背景图 用，隔开 背景色设到最后一个的前面*/
+        .box5{
+            height: 417px;
+            width: 623px;
+            background: url("images/bg1.png") no-repeat left top,
+            url("images/bg2.png") no-repeat right top,
+            url("images/bg3.png") no-repeat right bottom,
+            url("images/bg4.png") no-repeat left bottom,
+            #ccc url("images/bg5.png") no-repeat center center;/*只写一个center也可以*/
+        }
+
+
+        /*background-position 背景图片的位置
+         x:left center right
+         y:top center bottom*/
+
+        /*background-size：背景图片的大小
+        background-size: 100% 100%;/*让图片宽100% 高100%
+        background-size: contain; /*让图片100%显示在盒子中 盒子的宽高一旦变了 他就会等比例的缩小或放大
+        background-size: cover;/*让图片把盒子100%填满 盒子变大了就改变等比例缩放来改变
+        background-origin:border-box;/*改变开始的原点
+        */
+        .box6{
+            width: 700px;
+            height: 400px;
+            border:1px solid black;
+            background: url("images/1.jpg") no-repeat;
+            background-size: 100% 100%;/*让图片宽100% 高100%*/
+            background-size: contain; /*让图片100%显示在盒子中 盒子的宽高一旦变了 他就会等比例的缩小或放大*/
+            background-size: cover;/*让图片把盒子100%填满 盒子变大了就改变等比例缩放来改变*/
+            background-origin:border-box;/*改变开始的原点*/
+        }
+
+
+        /*缩放 transform:scale(x,y) width*x height*y 1不变 零点几是缩小的 大于1是放大的
+        平移 transform:translate(x,y) 水平和竖直的平移 不需定位 仍然占原来的位置，
+            transform：translateY(30px) 可以分开写
+        旋转 transform：rotate(30deg)顺时针旋转30度 默认以自己中心点center center为圆心旋转
+            transform：rotate(-30deg)逆时针旋转30度
+            transform-origin:0px 0px;以00为圆心转（00是自己的左上角 可以以自己外面的点为中心旋转）
+
+        倾斜 transform：skew(30deg);
+        */
+       /*过渡 transition: all .5s ease 0s; !*要加到元素中 不能加到效果里*!
+       两个过渡属性 中间用逗号隔开 多个直接用all
+       */
+        .box7{
+            width: 150px;
+            height: 150px;
+            background: lavenderblush;
+            margin-top: 20px;
+            /*transform: scale(1,1);*/
+            /*transition: all .5s ease 0s;*/
+            /*transform: translate(50px,100px); !*水平和竖直的平移*!*/
+            /*transform：rotate(30deg)；!*顺时针旋转30度*!*/
+            transform：skew(30deg);
+        }
+
+        /*私有前缀
+        浏览器：兼容低版本浏览器
+        */
+        .box8{
+            -webkit-transform: rotate(30deg); /*苹果、谷歌*/
+            -moz-transform: rotate(30deg); /*火狐*/
+            -ms-transform: rotate(30deg); /*ie*/
+            -o-transform: rotate(30deg); /*欧朋*/
+            transform：rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li class="b">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+</div>
+<div class="box2">
+    去阿萨方式了阿迪拉哈拉覅搜就是你
+</div>
+<div class="box3"></div>
+<div class="box4"></div>
+<div class="box5"></div>
+<div class="box6"></div>
+<div class="box7"></div>
+<div class="box8"></div>
+</body>
+</html>
